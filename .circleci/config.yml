@@ -4,7 +4,7 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 environment:
-  MY_NAME: Emerito Marquez
+  MY_NAME: "Emerito Marquez"
 jobs:
   my-name:
     # Specify the execution environment.
@@ -18,8 +18,7 @@ jobs:
       - run:
           name: "My Name"
           command: 
-            echo "My name is "
-            echo $MY_NAME
+            echo "My name is $MY_NAME"
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
